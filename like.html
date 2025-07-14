@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tus Me Gusta</title>
+  <link rel="stylesheet" href="css/like.css">
+</head>
+<body>
+  <header>
+    <h1>Tus Me Gusta</h1>
+  </header>
+
+  <main class="wishlist">
+    <h2>Wishlist</h2>
+    <div class="product-grid" id="wishlist-container">
+      <!-- Productos se agregan aquí dinámicamente -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <strong>Soporte</strong><br>
+        AV Tupac Amaru<br>
+        tienda.online@gmail.com<br>
+        984 470 555
+      </div>
+      <div>
+        <strong>Cuenta</strong><br>
+        Mi cuenta<br>
+        Login / Register<br>
+        Cart<br>
+        Wishlist<br>
+        Shop
+      </div>
+      <div>
+        <strong>Términos</strong><br>
+        Política de privacidad<br>
+        Terms Of Use<br>
+        FAQ<br>
+        Contacto
+      </div>
+    </div>
+    <p>&copy; 2025 Alarateck - Todos los derechos reservados</p>
+  </footer>
+
+
+  <script>
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+    function renderWishlist() {
+      const container = document.getElementById('wishlist-container');
+      container.innerHTML = '';
+      if (wishlist.length === 0) {
+        container.innerHTML = '<p style="text-align:center">No hay productos en tu lista de deseos.</p>';
+        return;
+      }
+      wishlist.forEach(product => {
+        const div = document.createElement('div');
+        div.className = 'product';
+        div.innerHTML = `
+          <button class="remove-btn" onclick="removeFromWishlist(${product.id})">&times;</button>
+          <img src="${product.img}" alt="${product.name}">
+          <h3>${product.name}</h3>
+          <p>${product.price}</p>
+          <button>Add to Cart</button>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function removeFromWishlist(id) {
+      const updated = wishlist.filter(product => product.id !== id);
+      localStorage.setItem('wishlist', JSON.stringify(updated));
+      location.reload();
+    }
+
+    renderWishlist();
+  </script>
+</body>
+</html>

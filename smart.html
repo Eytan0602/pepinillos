@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nexium Tech - HAVIT HV-G92 Gamepad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/smart.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Nexium Tech</div>
+   
+  </header>
+
+  <nav>
+    <div class="left">
+      <i class="fas fa-bars menu-toggle"></i>
+      <span>Categorías</span>
+    </div>
+    <div class="right">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="cart.html" class="nav-link">Carrito</a>
+      <input type="text" placeholder="Buscar productos...">
+      <i class="fas fa-search"></i>
+    </div>
+    
+    <div class="header-icons">
+      <div class="cart-icon" id="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-counter" id="cart-counter">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <div class="producto-detalle">
+      <div class="galeria">
+        <img src="/api/placeholder/400/400" alt="HAVIT HV-G92 Gamepad" class="imagen-principal" id="imagen-principal">
+        <div class="miniaturas">
+          <img src="/api/placeholder/80/80" alt="HAVIT HV-G92 Vista 1" class="miniatura active" data-img="/api/placeholder/400/400">
+          <img src="/api/placeholder/80/80" alt="HAVIT HV-G92 Vista 2" class="miniatura" data-img="/api/placeholder/400/400">
+          <img src="/api/placeholder/80/80" alt="HAVIT HV-G92 Vista 3" class="miniatura" data-img="/api/placeholder/400/400">
+          <img src="/api/placeholder/80/80" alt="HAVIT HV-G92 Vista 4" class="miniatura" data-img="/api/placeholder/400/400">
+        </div>
+      </div>
+      
+      <div class="info-producto">
+        <h1 id="producto-titulo">Havit HV-G92 Gamepad</h1>
+        <div class="rating">
+          <div class="estrellas">★★★★★</div>
+          <div class="reviews" id="producto-reviews">(126 reseñas)</div>
+        </div>
+        <div class="precio" id="producto-precio">$192.00</div>
+        
+        <div class="opciones">
+          <h3>Colores:</h3>
+          <div class="colores">
+            <div class="color active" data-color="black"></div>
+            <div class="color" data-color="white"></div>
+            <div class="color" data-color="red"></div>
+            <div class="color" data-color="blue"></div>
+          </div>
+          
+          <h3>Tamaño:</h3>
+          <div class="tamanios">
+            <div class="tamanio" data-size="S">S</div>
+            <div class="tamanio active" data-size="M">M</div>
+            <div class="tamanio" data-size="L">L</div>
+            <div class="tamanio" data-size="XL">XL</div>
+          </div>
+          
+          <h3>Cantidad:</h3>
+          <div class="control-cantidad">
+            <button id="disminuir">-</button>
+            <input type="text" value="1" id="cantidad" min="1" max="10">
+            <button id="aumentar">+</button>
+          </div>
+          
+          <div class="botones-accion">
+            <button class="btn btn-primario" id="btn-agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+        
+        <div class="info-envio">
+          <div class="item">
+            <div class="icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="texto">
+              <div class="titulo">Envío gratis</div>
+              <div class="descripcion">Envío rápido gratuito con entrega disponible</div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="icon">
+              <i class="fas fa-undo"></i>
+            </div>
+            <div class="texto">
+              <div class="titulo">Devolución</div>
+              <div class="descripcion">Fácil devolución 30 días después del pedido</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Productos relacionados -->
+    <div class="productos-relacionados">
+      <h2>Productos relacionados</h2>
+      <div class="productos">
+        <div class="producto" data-title="ASUS FHD Gaming Laptop" data-price="$960" data-oldprice="$1350" data-reviews="68" data-img="/api/placeholder/400/400">
+          <span class="etiqueta descuento">-30%</span>
+          <img src="/api/placeholder/200/200" alt="ASUS FHD Gaming Laptop">
+          <h3>ASUS FHD Gaming Laptop</h3>
+          <p class="precio">$960 <span class="precio-original">$1350</span></p>
+          <div class="rating">★★★★★ <span class="reviews">(68)</span></div>
+        </div>
+
+        <div class="producto" data-title="IPS LCD Gaming Monitor" data-price="$1160" data-reviews="68" data-img="/api/placeholder/400/400">
+          <img src="/api/placeholder/200/200" alt="IPS LCD Gaming Monitor">
+          <h3>IPS LCD Gaming Monitor</h3>
+          <p class="precio">$1160</p>
+          <div class="rating">★★★★★ <span class="reviews">(68)</span></div>
+        </div>
+
+        <div class="producto" data-title="AK-900 Wired Keyboard" data-price="$200" data-reviews="69" data-img="/api/placeholder/400/400">
+          <span class="etiqueta nuevo">NEW</span>
+          <img src="/api/placeholder/200/200" alt="AK-900 Wired Keyboard">
+          <h3>AK-900 Wired Keyboard</h3>
+          <p class="precio">$200</p>
+          <div class="rating">★★★★★ <span class="reviews">(69)</span></div>
+        </div>
+
+        <div class="producto" data-title="RGB Gaming Mouse" data-price="$150" data-reviews="42" data-img="/api/placeholder/400/400">
+          <img src="/api/placeholder/200/200" alt="RGB Gaming Mouse">
+          <h3>RGB Gaming Mouse</h3>
+          <p class="precio">$150</p>
+          <div class="rating">★★★★★ <span class="reviews">(42)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio para la notificación -->
+  <audio id="notification-sound" src="-226232.mp3"></audio>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <strong>Soporte</strong>
+        <a href="#">AV Tupac Amaru</a>
+        <a href="mailto:tienda.online@gmail.com">tienda.online@gmail.com</a>
+        <a href="tel:+51984470555">984 470 555</a>
+      </div>
+      <div>
+        <strong>Ayuda</strong>
+        <a href="#">Garantía</a>
+        <a href="#">Envíos y devoluciones</a>
+        <a href="#">Carrito</a>
+        <a href="#">Lista de deseos</a>
+        <a href="#">TPreguntas frecuentes</a>
+      </div>
+      <div>
+        <strong>Políticas</strong>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de uso</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <p>&copy; 2025 Nexium Tech - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    // Inicializar el contador del carrito desde localStorage
+    function actualizarContadorCarrito() {
+      const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      const contador = document.getElementById('cart-counter');
+      contador.textContent = carrito.length;
+    }
+    
+    // Llamar a la función al cargar la página
+    actualizarContadorCarrito();
+    
+    // Funcionalidad para cambiar la imagen principal al hacer clic en las miniaturas
+    const miniaturas = document.querySelectorAll('.miniatura');
+    const imagenPrincipal = document.getElementById('imagen-principal');
+    
+    miniaturas.forEach(miniatura => {
+      miniatura.addEventListener('click', function() {
+        // Quitar la clase active de todas las miniaturas
+        miniaturas.forEach(m => m.classList.remove('active'));
+        
+        // Añadir la clase active a la miniatura seleccionada
+        this.classList.add('active');
+        
+        // Cambiar la imagen principal
+        imagenPrincipal.src = this.getAttribute('data-img');
+      });
+    });
+    
+    // Funcionalidad para seleccionar color
+    const colores = document.querySelectorAll('.color');
+    
+    colores.forEach(color => {
+      color.addEventListener('click', function() {
+        // Quitar la clase active de todos los colores
+        colores.forEach(c => c.classList.remove('active'));
+        
+        // Añadir la clase active al color seleccionado
+        this.classList.add('active');
+        
+        // Aquí se podría añadir código para cambiar la imagen del producto según el color
+        const colorSeleccionado = this.getAttribute('data-color');
+        console.log(`Color seleccionado: ${colorSeleccionado}`);
+      });
+    });
+    
+    // Funcionalidad para seleccionar tamaño
+    const tamanios = document.querySelectorAll('.tamanio');
+    
+    tamanios.forEach(tamanio => {
+      tamanio.addEventListener('click', function() {
+        // Quitar la clase active de todos los tamaños
+        tamanios.forEach(t => t.classList.remove('active'));
+        
+        // Añadir la clase active al tamaño seleccionado
+        this.classList.add('active');
+        
+        const tamanioSeleccionado = this.getAttribute('data-size');
+        console.log(`Tamaño seleccionado: ${tamanioSeleccionado}`);
+      });
+    });
+    
+    // Funcionalidad para controlar la cantidad
+    const inputCantidad = document.getElementById('cantidad');
+    const btnDisminuir = document.getElementById('disminuir');
+    const btnAumentar = document.getElementById('aumentar');
+    
+    btnDisminuir.addEventListener('click', function() {
+      let valor = parseInt(inputCantidad.value);
+      if (valor > 1) {
+        inputCantidad.value = valor - 1;
+      }
+    });
+    
+    btnAumentar.addEventListener('click', function() {
+      let valor = parseInt(inputCantidad.value);
+      if (valor < 10) {
+        inputCantidad.value = valor + 1;
+      }
+    });
+    
+    // Validar que solo se ingresen números en el campo cantidad
+    inputCantidad.addEventListener('input', function() {
+      this.value = this.value.replace(/[^0-9]/g, '');
+      
+      if (this.value === '') {
+        this.value = '1';
+      } else {
+        const valor = parseInt(this.value);
+        if (valor < 1) {
+          this.value = '1';
+        } else if (valor > 10) {
+          this.value = '10';
+        }
+      }
+    });
+    
+    // Funcionalidad mejorada para agregar al carrito
+    const btnAgregarCarrito = document.getElementById('btn-agregar-carrito');
+    
+    btnAgregarCarrito.addEventListener('click', function() {
+      // Obtener los datos del producto
+      const cantidad = parseInt(document.getElementById('cantidad').value);
+      const color = document.querySelector('.color.active').getAttribute('data-color');
+      const tamanio = document.querySelector('.tamanio.active').getAttribute('data-size');
+      const productoTitulo = document.getElementById('producto-titulo').textContent;
+      const productoPrecio = document.getElementById('producto-precio').textContent;
+      const productoImagen = document.getElementById('imagen-principal').src;
+      
+      // Crear el objeto del producto
+      const producto = {
+        titulo: productoTitulo,
+        precio: productoPrecio,
+        color: color,
+        tamanio: tamanio,
+        cantidad: cantidad,
+        imagen: productoImagen
+      };
+      
+      // Guardar en el localStorage
+      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      carrito.push(producto);
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+      
+      // Actualizar contador del carrito
+      actualizarContadorCarrito();
+      
+      // Reproducir sonido de campana
+      const sonido = document.getElementById('notification-sound');
+      sonido.play();
+    });
+    
+    // Funcionalidad para el menú hamburguesa en versión móvil
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navRight = document.querySelector('nav .right');
+    
+    menuToggle.addEventListener('click', function() {
+      navRight.style.display = navRight.style.display === 'flex' ? 'none' : 'flex';
+    });
+    
+    // Funcionalidad para seleccionar productos relacionados
+    const productosRelacionados = document.querySelectorAll('.producto');
+    const productoTitulo = document.getElementById('producto-titulo');
+    const productoPrecio = document.getElementById('producto-precio');
+    const productoReviews = document.getElementById('producto-reviews');
+    
+    productosRelacionados.forEach(producto => {
+      producto.addEventListener('click', function() {
+        // Quitar la clase selected de todos los productos
+        productosRelacionados.forEach(p => p.classList.remove('selected'));
+        
+        // Añadir la clase selected al producto clickeado
+        this.classList.add('selected');
+        
+        // Actualizar imagen principal
+        imagenPrincipal.src = this.getAttribute('data-img');
+        
+        // Actualizar información del producto
+        productoTitulo.textContent = this.getAttribute('data-title');
+        productoPrecio.textContent = this.getAttribute('data-price');
+        
+        // Actualizar reseñas
+        const reviews = this.getAttribute('data-reviews');
+        productoReviews.textContent = `(${reviews} reseñas)`;
+        
+        // Resetear selecciones
+        document.querySelector('.color.active').classList.remove('active');
+        document.querySelector('.color[data-color="black"]').classList.add('active');
+        
+        document.querySelector('.tamanio.active').classList.remove('active');
+        document.querySelector('.tamanio[data-size="M"]').classList.add('active');
+        
+        inputCantidad.value = '1';
+      });
+    });
+    
+    // Redirigir al carrito cuando se hace clic en el icono del carrito
+    document.getElementById('cart-icon').addEventListener('click', function() {
+      window.location.href = 'cart.html';
+    });
+  </script>
+</body>
+</html>
