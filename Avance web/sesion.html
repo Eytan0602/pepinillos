@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Nexium Tech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/sesion.css">
+</head>
+<body>
+  
+  <div class="container" id="container">
+        <div class="form-container login-container">
+            <form class="form" id="login-form">
+                <div class="logo">Nexium</span></div>
+                <h1 class="form-title">Iniciar Sesión</h1>
+                <div class="social-container">
+                    <a href="#" class="social" id="google-login">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"/></svg>
+                    </a>
+                    <a href="#" class="social" id="microsoft-login">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.4 3H5.6C4.17 3 3 4.17 3 5.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6V5.6c0-1.43-1.17-2.6-2.6-2.6zm8 0h-5.8c-1.43 0-2.6 1.17-2.6 2.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6V5.6c0-1.43-1.17-2.6-2.6-2.6zM11.4 13H5.6C4.17 13 3 14.17 3 15.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6v-5.8c0-1.43-1.17-2.6-2.6-2.6zm8 0h-5.8c-1.43 0-2.6 1.17-2.6 2.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6v-5.8c0-1.43-1.17-2.6-2.6-2.6z"></path></svg>
+                    </a>
+                </div>
+                <span>o usa tu correo y contraseña</span>
+                <div class="form-group">
+                    <input type="email" id="login-email" placeholder="Correo electrónico" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Contraseña" required />
+                    <div class="error-message" id="login-error">Contraseña incorrecta, inténtalo de nuevo.</div>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remember-me" />
+                    <label for="remember-me">Recordar mi contraseña</label>
+                </div>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+        <div class="form-container register-container">
+            <form class="form" id="register-form">
+                <div class="logo">Nexium</span></div>
+                <h1 class="form-title">Crear Cuenta</h1>
+                <div class="social-container">
+                    <a href="#" class="social" id="google-register">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"/></svg>
+                    </a>
+                    <a href="#" class="social" id="microsoft-register">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.4 3H5.6C4.17 3 3 4.17 3 5.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6V5.6c0-1.43-1.17-2.6-2.6-2.6zm8 0h-5.8c-1.43 0-2.6 1.17-2.6 2.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6V5.6c0-1.43-1.17-2.6-2.6-2.6zM11.4 13H5.6C4.17 13 3 14.17 3 15.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6v-5.8c0-1.43-1.17-2.6-2.6-2.6zm8 0h-5.8c-1.43 0-2.6 1.17-2.6 2.6v5.8c0 1.43 1.17 2.6 2.6 2.6h5.8c1.43 0 2.6-1.17 2.6-2.6v-5.8c0-1.43-1.17-2.6-2.6-2.6z"></path></svg>
+                    </a>
+                </div>
+                <span>o regístrate con tu correo</span>
+                <div class="form-group">
+                    <input type="text" id="register-name" placeholder="Nombre completo" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" id="register-email" placeholder="Correo electrónico" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="register-password" placeholder="Contraseña" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="register-confirm-password" placeholder="Confirmar contraseña" required />
+                    <div class="error-message" id="register-error">Las contraseñas no coinciden.</div>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Para mantenerte conectado con nosotros, inicia sesión con tus datos personales</p>
+                    <a href="index.html">
+                    <button class="ghost" id="login">Iniciar Sesión</button></a>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>¡Hola, amigo!</h1>
+                    <p>Introduce tus datos personales y comienza tu viaje con nosotros</p>
+                    <a href="registro.html">
+                     <button class="ghost" id="register">Registrarse</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+      <script src="js/sesion.js"></script>
+
+</body>
+</html>

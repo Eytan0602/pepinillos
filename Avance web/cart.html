@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nexium Tech - Carrito de Compras</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Nexium Tech</div>
+  </header>
+
+  <nav>
+   
+    <div class="right">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="cart.html" class="nav-link">Carrito</a>
+      <a href="categoria" class="nav-link" onclick="history.back(); return false;">Volver</a>
+      <input type="text" placeholder="Buscar productos...">
+      <i class="fas fa-search"></i>
+    </div>
+    
+  </nav>
+
+  <div class="content">
+    <h1 class="carrito-titulo">Carrito de Compras</h1>
+
+    <div id="carrito-vacio" class="carrito-vacio" style="display: none;">
+      <p>Tu carrito está vacío</p>
+      <button class="btn btn-primario"><a href="index.html">Seguir comprando</a></button>
+    </div>
+
+    <div id="carrito-contenido" class="carrito-grid">
+      <div class="carrito-items" id="lista-carrito">
+      </div>
+
+      <div class="resumen-compra">
+        <h3>Resumen de compra</h3>
+        <div class="resumen-fila">
+          <span>Subtotal</span>
+          <span id="subtotal">S/0.00</span>
+        </div>
+        <div class="resumen-fila">
+          <span>Descuento</span>
+          <span id="descuento">S/0.00</span>
+        </div>
+        <div class="resumen-fila">
+          <span>Envío</span>
+          <span id="envio">Gratis</span>
+        </div>
+        <div class="resumen-fila resumen-total">
+          <span>Total</span>
+          <span id="total">S/0.00</span>
+        </div>
+        <button class="btn btn-primario" id="btn-proceder-pago"
+        onclick="window.location.href='verificar.html'">
+          Proceder al pago
+        </button>          </div>
+    </div>
+  </div>
+
+  
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <strong>Soporte</strong>
+        <a href="#">AV Tupac Amaru</a>
+        <a href="mailto:tienda.online@gmail.com">tienda.online@gmail.com</a>
+        <a href="tel:+51984470555">984 470 555</a>
+      </div>
+      <div>
+        <strong>Ayuda</strong>
+        <a href="#">Garantía</a>
+        <a href="#">Envíos y devoluciones</a>
+        <a href="#">Carrito</a>
+        <a href="#">Lista de deseos</a>
+        <a href="#">TPreguntas frecuentes</a>
+      </div>
+      <div>
+        <strong>Políticas</strong>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de uso</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <p>&copy; 2025 Nexium Tech - Todos los derechos reservados</p>
+  </footer>
+  <script src="js/cart.js"></script>
+  
+</body>
+</html>
